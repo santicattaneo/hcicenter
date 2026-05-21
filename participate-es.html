@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Participar - HCI Center</title>
+    <title>HCI - Participar</title>
     <link rel="stylesheet" href="src/scss/styles.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
@@ -11,23 +11,61 @@
     <main>
         <div class="container">
             <div class="logo mb-1">
-                <img src="/assets/images/imagotipo.svg" alt="Logo HCI Center">
+                <img src="/assets/images/imagotipo.svg" alt="">
+            </div>
+            <div class="lang">
+                <div class="lang__en">
+                    <p class="no-select">Español</p>
+                    <img src="/assets/images/arrow-down.svg" alt="">
+                </div>
+                <div class="lang__es">
+                    <a href="index.html">English</a>
+                </div>
             </div>
             <div class="headline mb-1">
-                <h1>Participa con HCI Center</h1>
+                <h1>Participa con HCI</h1>
             </div>
             <div class="subheadline mb-1">
-                <h2>Únete a nuestro esfuerzo por preservar el factor humano en los sistemas modernos.</h2>
+                <h2>Abre una Conversación</h2>
             </div>
-            <div class="content mb-1">
-                <p>Recibimos colaboradores, aliados y mentes curiosas. Descubre formas de participar mediante investigación, talleres y experimentos comunitarios.</p>
-            </div>
-            <div class="cta">
-                <a class="mb-1" href="/assets/docs/Human Hours (ES).pdf" target="_blank">Leer Nuestro Framework</a>
-                <a href="index-es.html">Volver a Inicio</a>
+            <div>
+                <form class="form" id="contact-form">
+
+                    <label>Nombre</label>
+                    <input name="nombre" placeholder="Nombre" required />
+
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="Email" required />
+
+                    <label>¿Qué te trae por aquí?</label>
+                    <textarea name="mensaje" placeholder="¿Qué te trae por aquí?" required></textarea>
+
+                    <button type="submit">
+                    Empieza la Conversación
+                    </button>
+
+                </form>
+
             </div>
         </div>
     </main>
+    <div class="thanks" style="display:none;">
+        <div class="popup">
+            <img class="thanks__logo" src="/assets/images/imagotipo.svg" alt="">
+            <p class="thanks__text-1">Su mensaje ha sido recibido</p>
+            <p class="thanks__text-2 mb-2">Gracias por contribuir a la conversación, una respuesta seguirá a medida que continúe la correspondencia</p>
+            <a href="/">Volver al Inicio</a>
+        </div>
+    </div>
+    <div class="error" style="display:none;">
+        <div class="popup">
+            <img class="error__logo" src="/assets/images/imagotipo.svg" alt="">
+            <p class="error__text-1">No se ha podido enviar el mensaje</p>
+            <p class="error__text-2 mb-2">Por favor, inténtelo de nuevo en unos momentos o póngase en contacto directamente con hciparticipate@gmail.com</p>
+            <a href="/">Volver al Inicio</a>
+        </div>
+    </div>
+<script src="src/js/form.js"></script>
 <script src="src/js/main.js"></script>
 </body>
 </html>
