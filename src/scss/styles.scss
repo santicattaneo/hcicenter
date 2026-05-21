@@ -1,0 +1,32 @@
+@use 'hero';
+@use 'lang';
+@use 'participate';
+
+@use 'mixins' as m;
+@use 'variables' as v;
+
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: "Open Sauce One", sans-serif;
+    background: v.$bone;
+    color: v.$charcoal;
+    overflow-x: hidden;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

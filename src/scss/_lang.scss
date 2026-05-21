@@ -1,0 +1,71 @@
+@use 'mixins' as m;
+@use 'variables' as v;
+
+.lang{
+    grid-column: 4 / 4;
+    align-self: start;
+    justify-self: end;
+    border: 2px solid v.$charcoal;
+    
+    &__en{
+        padding: 8px;
+        display: flex;
+        gap: 4px;
+        cursor: pointer;
+        
+        p{
+            pointer-events: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none;
+            cursor: default;
+            padding: 0;
+            margin: 0;
+        }
+        
+        img{
+            pointer-events: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none;
+        }
+    }
+    
+    &__es{
+        display: none;
+        padding: 8px;
+        
+        a{
+            text-decoration: none;
+            color: v.$charcoal;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none;
+            @include m.S() {
+                font-size: 16px;
+            }
+        }
+    }
+    
+    &.open {
+        
+        .lang__es{
+            display: block;
+            &:hover{
+                background-color: v.$charcoal;
+                a{
+                    color: v.$bone;
+                }
+            }
+        }
+        
+        .lang__en{
+            img{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

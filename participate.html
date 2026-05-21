@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCI - Participate</title>
+    <link rel="stylesheet" href="src/scss/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="logo mb-1">
+                <img src="/assets/images/imagotipo.svg" alt="">
+            </div>
+            <div class="lang">
+                <div class="lang__en">
+                    <p class="no-select">English</p>
+                    <img src="/assets/images/arrow-down.svg" alt="">
+                </div>
+                <div class="lang__es">
+                    <a href="index-es.html">Español</a>
+                </div>
+            </div>
+            <div class="headline mb-1">
+                <h1>Participate with HCI</h1>
+            </div>
+            <div class="subheadline mb-1">
+                <h2>Open a Conversation</h2>
+            </div>
+            <div>
+                <form class="form" id="contact-form">
+
+                    <label>Name</label>
+                    <input name="nombre" placeholder="Name" required />
+
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="Email" required />
+
+                    <label>Message</label>
+                    <textarea name="mensaje" required></textarea>
+
+                    <button type="submit">
+                    Begin the Conversation
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <div class="thanks" style="display:none;">
+        <div class="popup">
+            <img class="thanks__logo" src="/assets/images/imagotipo.svg" alt="">
+            <p class="thanks__text-1">Your message has been received</p>
+            <p class="thanks__text-2 mb-2">Thank you for contributing to the conversation, a response will follow as the correspondence continues</p>
+            <a href="/">Back to home</a>
+        </div>
+    </div>
+    <div class="error" style="display:none;">
+        <div class="popup">
+            <img class="error__logo" src="/assets/images/imagotipo.svg" alt="">
+            <p class="error__text-1">The message could not be sent</p>
+            <p class="error__text-2 mb-2">Please try again in a few moments or reach out directly to hciparticipate@gmail.com </p>
+            <a href="/">Back to home</a>
+        </div>
+    </div>
+<script src="src/js/form.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
