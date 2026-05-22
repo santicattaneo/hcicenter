@@ -44,7 +44,7 @@
             -moz-user-select: none;
             -ms-user-select: none; 
             user-select: none;
-            @include m.S() {
+            @include m.mobile() {
                 font-size: 16px;
             }
         }
