@@ -1,13 +1,14 @@
 @use 'hero';
 @use 'lang';
 @use 'participate';
+@use 'archive';
 
 @use 'mixins' as m;
 @use 'variables' as v;
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -20,13 +21,28 @@ body {
     overflow-x: hidden;
 }
 
-main{
+main, section{
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .container{
-    margin: 24px;
+    padding: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.container-2{
+    padding: 32px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mb-1{
+    margin-bottom: 32px;
+}
+
+.mb-2{
+    margin-bottom: 64px;
 }

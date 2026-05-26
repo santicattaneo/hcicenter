@@ -10,8 +10,8 @@
 <body>
     <main>
         <div class="container">
-            <div class="logo mb-1">
-                <a href="/index-es.html"><img src="/assets/images/imagotipo.svg" alt=""></a>
+            <div class="logo">
+                <a href="/"><img src="/assets/images/imagotipo.svg" alt=""></a>
             </div>
             <div class="lang">
                 <div class="lang__en">
@@ -26,43 +26,35 @@
                 <h1>Participa con HCI</h1>
             </div>
             <div class="subheadline mb-1">
-                <h2>Abre una Conversación</h2>
+                <h2>Iniciar una conversación</h2>
             </div>
             <div class="form-container">
                 <form class="form" id="contact-form">
-
                     <label>Nombre</label>
-                    <input name="nombre" placeholder="Nombre" required />
-
+                    <input name="nombre" placeholder="nombre" required />
                     <label>Email</label>
                     <input name="email" type="email" placeholder="Email" required />
-
                     <label>¿Qué te trae por aquí?</label>
-                    <textarea name="mensaje" placeholder="Contanos" required></textarea>
-
-                    <button type="submit">
-                    Abre una Conversación
-                    </button>
-
+                    <textarea name="mensaje" placeholder="Cuéntanos" required></textarea>
+                    <button type="submit">Iniciar una conversación</button>
                 </form>
-
             </div>
         </div>
     </main>
     <div class="thanks" style="display:none;">
         <div class="popup">
             <img class="thanks__logo" src="/assets/images/imagotipo.svg" alt="">
-            <p class="thanks__text-1">Su mensaje ha sido recibido</p>
-            <p class="thanks__text-2 mb-2">Gracias por contribuir a la conversación, una respuesta seguirá a medida que continúe la correspondencia</p>
-            <a href="/">Volver al Inicio</a>
+            <p class="thanks__text-1">Hemos recibido tu mensaje</p>
+            <p class="thanks__text-2 mb-2">Gracias por participar en el debate; te responderemos a medida que avance la conversación.</p>
+            <a href="/">Volver al Index</a>
         </div>
     </div>
     <div class="error" style="display:none;">
         <div class="popup">
             <img class="error__logo" src="/assets/images/imagotipo.svg" alt="">
             <p class="error__text-1">No se ha podido enviar el mensaje</p>
-            <p class="error__text-2 mb-2">Por favor, inténtelo de nuevo en unos momentos o póngase en contacto directamente con hciparticipate@gmail.com</p>
-            <a href="/">Volver al Inicio</a>
+            <p class="error__text-2 mb-2">Inténtalo de nuevo dentro de unos minutos o ponte en contacto directamente con hciparticipate@gmail.com</p>
+            <a href="/">Volver al Index</a>
         </div>
     </div>
 <script src="src/js/form.js"></script>
