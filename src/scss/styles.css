@@ -177,7 +177,13 @@ h2 {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
+  padding: 24px;
   background-color: #d5d1c0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 .thanks a, .error a {
   padding: 16px;
@@ -201,11 +207,13 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 32px;
+  text-align: center;
 }
 .thanks__text-2 {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 .error__logo {
@@ -215,11 +223,13 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 32px;
+  text-align: center;
 }
 .error__text-2 {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 .mb-2 {
