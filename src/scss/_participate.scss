@@ -1,17 +1,11 @@
 @use 'mixins' as m;
 @use 'variables' as v;
 
-.form-container {
-    grid-column: 1 / 3;
-    @include m.tablet() {
-        grid-column: 1 / 5;
-    }
-}
-
 .form{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: v.$small;
+    
     label{
         pointer-events: none;
         -webkit-user-select: none;
@@ -20,12 +14,14 @@
         user-select: none;
         cursor: default;
     }
+
     input, textarea{
-        padding: 16px;
+        padding: v.$small;
         background: v.$bone;
         border: 2px solid v.$charcoal;
-        border-radius: 8px;
+        border-radius: v.$small;
     }
+
     textarea{
         height: 128px;
         resize: none;
@@ -35,15 +31,15 @@
         }
     }
     button{
-        padding: 16px;
-        background-color: v.$clay;
+        padding: v.$small;
+        background-color: v.$charcoal;
         border: none;
-        border-radius: 8px;
-        color: v.$charcoal;
-        font-size: 16px;
+        border-radius: v.$small;
+        color: v.$bone;
+        font-size: v.$small;
         &:hover{
-            background-color: v.$charcoal;
-            color: v.$bone;
+            background-color: v.$clay;
+            color: v.$charcoal;
         }
     }
 }
@@ -54,20 +50,20 @@
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    padding: 24px;
+    padding: v.$medium;
     background-color: v.$bone;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: v.$medium;
     align-items: center;
     justify-content: center;
     a{
-        padding: 16px;
+        padding: v.$small;
         background-color: v.$slate;
         border: none;
         border-radius: 4px;
         color: v.$charcoal;
-        font-size: 16px;
+        font-size: v.$small;
         text-decoration: none;
         text-align: center;
         &:hover{
@@ -84,13 +80,13 @@
     &__text-1{
         margin: 0;
         padding: 0;
-        font-size: 32px;
+        font-size: v.$medium;
         text-align: center;
     }
     &__text-2{
         margin: 0;
         padding: 0;
-        font-size: 16px;
+        font-size: v.$small;
         text-align: center;
     }
 }
@@ -101,19 +97,19 @@
     &__text-1{
         margin: 0;
         padding: 0;
-        font-size: 32px;
+        font-size: v.$medium;
         text-align: center;
     }
     &__text-2{
         margin: 0;
         padding: 0;
-        font-size: 16px;
+        font-size: v.$small;
         text-align: center;
     }
 }
 
 .mb-2{
-    margin-bottom: 16px;
+    margin-bottom: v.$small;
 }
 
 .popup{
@@ -123,5 +119,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: v.$small;
 }

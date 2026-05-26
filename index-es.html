@@ -6,49 +6,60 @@
     <title>HCI - Center</title>
     <link rel="stylesheet" href="src/scss/styles.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="logo">
-                <a href="/index-es.html"><img src="/assets/images/imagotipo.svg" alt=""></a>
+    <div class="verticalLayout"></div>
+        <div class="grid gapSmall header">
+            <div class="header__logo">
+                <a href="/index-es.html"><img src="/assets/images/imagotipo.svg" alt="hci-imagotipo"></a>
             </div>
-            <div class="lang">
-                <div class="lang__en">
-                <p class=".no-select">Español</p>
-                <img src="/assets/images/arrow-down.svg" alt="">
-            </div>
-            <div class="lang__es">
-                <a href="index.html">English</a>
-            </div>
-            </div>
-            <div class="headline">
-                <h1>La profundidad humana ya no puede darse por sentada como una consecuencia natural de la vida moderna</h1>
-            </div>
-            <div class="subheadline mb-1">
-                <h2>Empieza a necesitar un entorno protegido</h2>
-            </div>
-            <div class="cta">
-                <a class="mb-1" href="/assets/docs/Human_Hours-ES.pdf" target="_blank">Leer Nuestro Framework</a>
-                <a href="participate-es.html">Participar</a>
-            </div>
-        </div>
-    </main>
-    <section class="bg-cg">
-        <div class="container-2">
-            <div class="archive__title">
-                <h3>Archive</h3>
-            </div>
-            <div class="archive__item">
-                <div class="archive__item__info">
-                    <p class="archive__item__category">HCI · Investigación Humana</p>
-                    <p class="archive__item__title">La Distancia Entre Conciencias</p>
-                    <p class="archive__item__description">Una reflexión sobre cómo la percepción, la validación y las condiciones actuales configuran la relación entre la vida interior y la realidad compartida, y sobre cómo gran parte del sufrimiento humano puede no provenir de la conciencia en sí misma, sino de la distancia entre el ser vivido y el ser percibido.</p>
-                    <a href="/archive/la_distancia_entre_conciencias.html" class="archive__item__cta">Leer</a>
+            <div class="header__lang">
+                <div class="header__lang__en">
+                    <p class=".no-select">ES</p>
+                    <img src="/assets/images/arrow-down.svg" alt="arrow-down">
+                </div>
+                <div class="header__lang__es">
+                    <a href="/index.html">EN</a>
                 </div>
             </div>
         </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
+        <div class="flex hero">
+            <div class="headline">
+                <h1>La profundidad humana ya no puede asumirse como una consecuencia natural de la vida moderna</h1>
+            </div>
+            <div class="subheadline mb-1">
+                <h2>Empieza a requerir condiciones protegidas</h2>
+            </div>
+            <a class="hero__cta" href="/assets/docs/Human_Hours-ES.pdf" target="_blank">Leer Nuestro Framework</a>
+            <a class="hero__cta" href="/participar.html">Participar</a>
+        </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
+    </main>
+    <section class="archive">
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
+        <div class="flex">
+            <h3>Archive</h3>
+        </div>
+        <div class="verticalLayout"></div>
+        <div class="grid grid-gap">
+            <div class="archive__item">
+                <p class="archive__item__category">HCI · Investigación Humana</p>
+                <h2>La Distancia Entre Conciencias</h2>
+                <p class="archive__item__description">Una reflexión sobre cómo la percepción, la validación y las condiciones actuales configuran la relación entre la vida interior y la realidad compartida, y sobre cómo gran parte del sufrimiento humano puede no provenir de la conciencia en sí misma, sino de la distancia entre el ser vivido y el ser percibido.</p>
+                <a class="archive__item__cta" href="/archive/la_distancia_entre_conciencias.html">Leer</a>
+            </div>
+        </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
     </section>
 <script src="src/js/main.js"></script>
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script> 
+<script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
 </body>
 </html>

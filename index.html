@@ -6,49 +6,60 @@
     <title>HCI - Center</title>
     <link rel="stylesheet" href="src/scss/styles.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="logo">
-                <a href="/index.html"><img src="/assets/images/imagotipo.svg" alt=""></a>
+    <div class="verticalLayout"></div>
+        <div class="grid gapSmall header">
+            <div class="header__logo">
+                <a href="/index.html"><img src="/assets/images/imagotipo.svg" alt="hci-imagotipo"></a>
             </div>
-            <div class="lang">
-                <div class="lang__en">
-                <p class=".no-select">English</p>
-                <img src="/assets/images/arrow-down.svg" alt="">
+            <div class="header__lang">
+                <div class="header__lang__en">
+                    <p class=".no-select">EN</p>
+                    <img src="/assets/images/arrow-down.svg" alt="arrow-down">
+                </div>
+                <div class="header__lang__es">
+                    <a href="/index-es.html">ES</a>
+                </div>
             </div>
-            <div class="lang__es">
-                <a href="index-es.html">Español</a>
-            </div>
-            </div>
+        </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
+        <div class="flex hero">
             <div class="headline">
                 <h1>Human depth can no longer be taken for granted as a natural consequence of modern life</h1>
             </div>
             <div class="subheadline mb-1">
                 <h2>It is beginning to require protected conditions</h2>
             </div>
-            <div class="cta">
-                <a class="mb-1" href="/assets/docs/Human_Hours-EN.pdf" target="_blank">Read Our Framework</a>
-                <a href="participate.html">Participate</a>
-            </div>
+            <a class="hero__cta" href="/assets/docs/Human_Hours-EN.pdf" target="_blank">Read Our Framework</a>
+            <a class="hero__cta" href="/participate.html">Participate</a>
         </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
     </main>
-    <section class="bg-cg">
-        <div class="container-2">
-            <div class="archive__title">
-                <h3>Archive</h3>
-            </div>
+    <section class="archive">
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
+        <div class="flex">
+            <h3>Archive</h3>
+        </div>
+        <div class="verticalLayout"></div>
+        <div class="grid grid-gap">
             <div class="archive__item">
-                <div class="archive__item__info">
-                    <p class="archive__item__category">HCI · Human Investigation</p>
-                    <p class="archive__item__title">The Distance Between Consciousness</p>
-                    <p class="archive__item__description">An exploration of how perception, validation and modern conditions shape the relationship between interior life and shared reality — and how much of human suffering may emerge not from consciousness itself, but from the distance between being experienced and being perceived.</p>
-                    <a href="/archive/the_distance_between_consciousness.html" class="archive__item__cta">Read</a>
-                </div>
+                <p class="archive__item__category">HCI · Human Investigation</p>
+                <h2>The Distance Between Consciousness</h2>
+                <p class="archive__item__description">An exploration of how perception, validation and modern conditions shape the relationship between interior life and shared reality — and how much of human suffering may emerge not from consciousness itself, but from the distance between being experienced and being perceived.</p>
+                <a class="archive__item__cta" href="/archive/the_distance_between_consciousness.html">Read</a>
             </div>
         </div>
+    <div class="verticalLayout"></div>
+    <div class="verticalLayout"></div>
     </section>
 <script src="src/js/main.js"></script>
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script> 
+<script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
 </body>
 </html>

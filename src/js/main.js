@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const langBlock = document.querySelector('.lang');
-    const langEn = document.querySelector('.lang__en');
-    const langEs = document.querySelector('.lang__es');
+    const langBlock = document.querySelector('.header__lang');
+    const langEn = document.querySelector('.header__lang__en');
+    const langEs = document.querySelector('.header__lang__es');
 
     if (!langBlock || !langEn || !langEs) {
         return;
