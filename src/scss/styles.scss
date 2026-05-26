@@ -27,13 +27,13 @@ main, section{
 }
 
 .container{
-    padding: 32px;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .container-2{
-    padding: 32px;
+    padding: 24px;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(4, 1fr);

@@ -318,10 +318,12 @@ h3 {
   flex-direction: column;
   gap: 16px;
 }
-.articleFooter__cta {
+
+.articleFooterCta {
+  grid-column: 1/6;
   margin-top: 32px;
 }
-.articleFooter__cta a {
+.articleFooterCta a {
   color: #38373e;
 }
 
@@ -344,13 +346,13 @@ main, section {
 }
 
 .container {
-  padding: 32px;
+  padding: 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .container-2 {
-  padding: 32px;
+  padding: 24px;
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(4, 1fr);
