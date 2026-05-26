@@ -23,17 +23,20 @@
     input, textarea{
         padding: 16px;
         background: v.$bone;
-        border: 1px solid v.$charcoal;
-        border-radius: 4px;
+        border: 2px solid v.$charcoal;
+        border-radius: 8px;
     }
     textarea{
         height: 128px;
         resize: none;
 
+        &::placeholder{
+            font-family: 'Geist', sans-serif;
+        }
     }
     button{
         padding: 16px;
-        background-color: v.$slate;
+        background-color: v.$clay;
         border: none;
         border-radius: 4px;
         color: v.$charcoal;
