@@ -32,6 +32,12 @@ main, section{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-2{
+    padding: 0 v.$medium;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .gapSmall{
     gap: v.$small;
 }
@@ -44,7 +50,6 @@ main, section{
     padding: 0 v.$medium;
     display: flex;
     flex-direction: column;
-    gap: v.$medium;
 }
 
 .verticalLayout{
@@ -98,6 +103,7 @@ h3{
     font-size: v.$big;
     font-weight: 400;
 }
+
 a{
     display: inline-block;
     width: fit-content;
