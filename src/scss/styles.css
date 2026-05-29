@@ -71,7 +71,7 @@
   margin: 0;
 }
 .header__lang.open .header__lang__es:hover {
-  border-radius: 16px;
+  border-radius: 12.8px;
   background-color: #38373e;
 }
 .header__lang.open .header__lang__es:hover p {

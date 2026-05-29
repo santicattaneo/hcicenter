@@ -83,7 +83,7 @@
                 }
 
                 &:hover{
-                    border-radius: v.$small;
+                    border-radius: calc(v.$small / 1.25);
                     background-color: v.$charcoal;
                     p{
                         color: v.$bone;
