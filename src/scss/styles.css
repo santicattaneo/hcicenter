@@ -41,7 +41,6 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
 }
 .header__lang__en img {
   pointer-events: none;
@@ -60,17 +59,22 @@
   -moz-user-select: none;
   user-select: none;
   font-size: 16px;
-  font-weight: 500;
 }
 .header__lang.open .header__lang__es {
   display: block;
   padding: 16px;
+  width: 100%;
+  text-decoration: none;
+}
+.header__lang.open .header__lang__es p {
+  color: #38373e;
+  margin: 0;
 }
 .header__lang.open .header__lang__es:hover {
   border-radius: 16px;
   background-color: #38373e;
 }
-.header__lang.open .header__lang__es:hover a {
+.header__lang.open .header__lang__es:hover p {
   color: #d5d1c0;
 }
 .header__lang.open .header__lang__en img {

@@ -45,7 +45,6 @@
                 padding: 0;
                 margin: 0;
                 font-size: v.$small;
-                font-weight: 500;
             }
             
             img{
@@ -68,7 +67,6 @@
                 -ms-user-select: none; 
                 user-select: none;
                 font-size: v.$small;
-                font-weight: 500;
             }
         }
         
@@ -77,10 +75,17 @@
             .header__lang__es{
                 display: block;
                 padding: v.$small;
+                width: 100%;
+                text-decoration: none;
+                p{
+                    color: v.$charcoal;
+                    margin: 0;
+                }
+
                 &:hover{
                     border-radius: v.$small;
                     background-color: v.$charcoal;
-                    a{
+                    p{
                         color: v.$bone;
                     }
                 }
